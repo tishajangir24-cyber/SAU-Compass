@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Map – SAU Compass</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="compass-icon">&#9697;</span> SAU Compass
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html" class="active">Campus Map</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="timings.html">Timings</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero page-hero--map">
+    <div class="container">
+      <h1>Campus Map</h1>
+      <p>Explore the 100-acre South Asian University campus</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter buttons -->
+      <div class="filter-bar" id="mapFilter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="hostel">Hostels</button>
+        <button class="filter-btn" data-filter="admin">Administration</button>
+        <button class="filter-btn" data-filter="facility">Facilities</button>
+      </div>
+
+      <!-- Campus map grid (visual representation) -->
+      <div class="campus-map-container" id="campusMap">
+
+        <div class="map-zone map-zone--entrance">
+          <span class="map-zone-label">&#127963; Main Gate</span>
+        </div>
+
+        <div class="map-buildings-grid">
+
+          <div class="map-building" data-category="academic" data-info="Houses faculty offices and lecture halls for Schools of Economics, International Relations and Development Studies.">
+            <div class="building-icon">&#127979;</div>
+            <span>Academic Block A</span>
+            <small>Economics &amp; IR</small>
+          </div>
+
+          <div class="map-building" data-category="academic" data-info="Primary lecture halls, seminar rooms and faculty offices for Science and Technology programmes.">
+            <div class="building-icon">&#9879;</div>
+            <span>Academic Block B</span>
+            <small>Science &amp; Tech</small>
+          </div>
+
+          <div class="map-building" data-category="admin" data-info="Office of the Registrar, Admissions, Finance and Vice Chancellor's secretariat.">
+            <div class="building-icon">&#127963;</div>
+            <span>Admin Block</span>
+            <small>Main Office</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Central Library open Mon–Sat, 8am–10pm. Contains digital resources, reading rooms and printing facilities.">
+            <div class="building-icon">&#128218;</div>
+            <span>Central Library</span>
+            <small>Mon–Sat, 8am–10pm</small>
+          </div>
+
+          <div class="map-building" data-category="hostel" data-info="Boys' hostel accommodating approximately 200 students. Common room, laundry and Wi-Fi available.">
+            <div class="building-icon">&#127968;</div>
+            <span>Boys' Hostel</span>
+            <small>Block 1 &amp; 2</small>
+          </div>
+
+          <div class="map-building" data-category="hostel" data-info="Girls' hostel with 24/7 security. Common room, laundry, recreation area and guest registration.">
+            <div class="building-icon">&#127968;</div>
+            <span>Girls' Hostel</span>
+            <small>Block A &amp; B</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Main dining mess serving breakfast, lunch and dinner. Timings: 7:30am, 1pm, 8pm daily.">
+            <div class="building-icon">&#127869;</div>
+            <span>Main Mess</span>
+            <small>All meals daily</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Outdoor cricket ground, football field and basketball court. Open 6am–8pm daily.">
+            <div class="building-icon">&#9917;</div>
+            <span>Sports Complex</span>
+            <small>Outdoor &amp; Indoor</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Campus clinic with a doctor available Mon–Fri, 10am–5pm. Emergency first aid 24/7.">
+            <div class="building-icon">&#127973;</div>
+            <span>Health Centre</span>
+            <small>Mon–Fri, 10am–5pm</small>
+          </div>
+
+          <div class="map-building" data-category="admin" data-info="International student services, visa support, and cultural exchange programmes office.">
+            <div class="building-icon">&#127758;</div>
+            <span>International Office</span>
+            <small>Student Services</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Convenience store, stationery and print shop. Open 9am–9pm weekdays.">
+            <div class="building-icon">&#127978;</div>
+            <span>Campus Store</span>
+            <small>9am–9pm weekdays</small>
+          </div>
+
+          <div class="map-building" data-category="facility" data-info="Common gathering spaces, benches, walking paths and garden areas throughout campus.">
+            <div class="building-icon">&#127795;</div>
+            <span>Green Areas</span>
+            <small>Open 24/7</small>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Info popup -->
+      <div class="info-popup" id="infoPopup">
+        <button class="popup-close" id="popupClose">&#10005;</button>
+        <h4 id="popupTitle">Building Name</h4>
+        <p id="popupInfo">Info goes here</p>
+      </div>
+
+      <p class="map-hint">&#128161; Click any building to see details</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="compass-icon">&#9697;</span>
+        <strong>SAU Compass</strong>
+        <p>South Asian University Campus Guide</p>
+      </div>
+      <div class="footer-links">
+        <a href="map.html">Campus Map</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="timings.html">Timings</a>
+        <a href="notices.html">Notices</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>Made by Tisha Jangir, Sangam Kumar Yadav &amp; Varun Agrawal</p>
+        <p>&copy; 2026 SAU Compass.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timings - SAU Compass</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="compass-icon">&#9697;</span> SAU Compass
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Campus Map</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="timings.html" class="active">Timings</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero page-hero--timings">
+    <div class="container">
+      <h1>Office &amp; Facility Timings</h1>
+      <p>Know when everything is open before you go</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Live clock -->
+      <div class="live-clock-bar">
+        <span>Current time:</span>
+        <span id="liveClock" class="live-time">--:--:-- --</span>
+        <span id="currentDay" class="live-day"></span>
+      </div>
+
+      <!-- Timing tables -->
+      <h2 class="subsection-title">Academic Offices</h2>
+      <div class="timing-table-wrap">
+        <table class="timing-table">
+          <thead>
+            <tr>
+              <th>Office / Department</th>
+              <th>Monday - Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Registrar's Office</td>
+              <td class="open">9:00am - 5:00pm</td>
+              <td class="partial">Closed</td>
+              <td class="closed">Closed</td>
+            </tr>
+            <tr>
+              <td>Admissions Office</td>
+              <td class="open">9:30am - 4:30pm</td>
+              <td class="closed">Closed</td>
+              <td class="closed">Closed</td>
+            </tr>
+            <tr>
+              <td>Finance &amp; Accounts</td>
+              <td class="open">10:00am - 4:00pm</td>
+              <td class="closed">Closed</td>
+              <td class="closed">Closed</td>
+            </tr>
+            <tr>
+              <td>Academic Block A</td>
+              <td class="open">8:00am - 6:00pm</td>
+              <td class="partial">9:00am - 2:00pm</td>
+              <td class="closed">Closed</td>
+            </tr>
+            <tr>
+              <td>Academic Block B</td>
+              <td class="open">8:00am - 7:00pm</td>
+              <td class="partial">9:00am - 3:00pm</td>
+              <td class="closed">Closed</td>
+            </tr>
+            <tr>
+              <td>Central Library</td>
+              <td class="open">8:00am - 10:00pm</td>
+              <td class="open">8:00am - 10:00pm</td>
+              <td class="partial">10:00am - 5:00pm</td>
+            </tr>
+            <tr>
+              <td>International Students Office</td>
+              <td class="open">9:30am - 5:30pm</td>
+              <td class="closed">Closed</td>
+              <td class="closed">Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="subsection-title">Mess &amp; Dining Timings</h2>
+      <div class="timing-table-wrap">
+        <table class="timing-table">
+          <thead>
+            <tr>
+              <th>Meal</th>
+              <th>Time</th>
+              <th>Days</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&#127836; Breakfast</td>
+              <td class="open">8:30am - 10:30am</td>
+              <td>All days</td>
+              <td>All Mess</td>
+            </tr>
+            <tr>
+              <td>&#127837; Lunch</td>
+              <td class="open">12:30pm - 2:30pm</td>
+              <td>All days</td>
+              <td>All Mess</td>
+            </tr>
+            <tr>
+              <td>&#127839; Dinner</td>
+              <td class="open">7:30pm - 9:30pm</td>
+              <td>All days</td>
+              <td>All Mess</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="subsection-title">Other Facilities</h2>
+      <div class="timing-table-wrap">
+        <table class="timing-table">
+          <thead>
+            <tr>
+              <th>Facility</th>
+              <th>Weekdays</th>
+              <th>Weekend</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Health Centre (Doctor)</td>
+              <td class="open">10:00am - 5:00pm</td>
+              <td class="closed">Closed</td>
+              <td><span class="status-badge status--open">Open Today</span></td>
+            </tr>
+            <tr>
+              <td>First Aid (Emergency)</td>
+              <td class="open">24 Hours</td>
+              <td class="open">24 Hours</td>
+              <td><span class="status-badge status--open">Always Open</span></td>
+            </tr>
+            <tr>
+              <td>Sports Complex</td>
+              <td class="open">6:00am - 8:00pm</td>
+              <td class="open">7:00am - 6:00pm</td>
+              <td><span class="status-badge status--open">Open Today</span></td>
+            </tr>
+            <tr>
+              <td>Campus Store(Kendriya Bhandar)</td>
+              <td class="open">9:00am - 9:00pm(Tuesday closed)</td>
+              <td class="partial">10:00am - 6:00pm</td>
+              <td><span class="status-badge status--open">Open Today</span></td>
+            </tr>
+            <tr>
+              <td>Tapri+Mother Dairy Store</td>
+              <td class="open">9:00am - 11:00pm</td>
+              <td class="partial">10:00am - 11:00pm</td>
+              <td><span class="status-badge status--open">Open Today</span></td>
+            </tr>
+            <tr>
+              <td>Security Office</td>
+              <td class="open">24 Hours</td>
+              <td class="open">24 Hours</td>
+              <td><span class="status-badge status--open">Always Open</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="timing-legend">
+        <span class="legend-item"><span class="dot dot--open"></span> Open</span>
+        <span class="legend-item"><span class="dot dot--partial"></span> Limited hours</span>
+        <span class="legend-item"><span class="dot dot--closed"></span> Closed</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="compass-icon">&#9697;</span>
+        <strong>SAU Compass</strong>
+        <p>South Asian University Campus Guide</p>
+      </div>
+      <div class="footer-links">
+        <a href="map.html">Campus Map</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="timings.html">Timings</a>
+        <a href="notices.html">Notices</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>Made by Tisha Jangir, Sangam Kumar Yadav &amp; Varun Agrawal</p>
+        <p>&copy; 2026 SAU Compass.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

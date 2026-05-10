@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities - SAU Compass</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="compass-icon">&#9697;</span> SAU Compass
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Campus Map</a></li>
+        <li><a href="facilities.html" class="active">Facilities</a></li>
+        <li><a href="timings.html">Timings</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero page-hero--facilities">
+    <div class="container">
+      <h1>Facilities</h1>
+      <p>Everything available on campus, in one place</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="hostel">Hostel</button>
+        <button class="filter-btn" data-filter="dining">Dining</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="health">Health</button>
+      </div>
+
+      <div class="facilities-grid" id="facilitiesGrid">
+
+        <div class="facility-card" data-category="academic">
+          <div class="facility-header">
+            <span class="facility-icon">&#127979;</span>
+            <div>
+              <h3>Academic Block A</h3>
+              <span class="badge badge--academic">Academic</span>
+            </div>
+          </div>
+          <ul>
+            <li>School of Economics</li>
+            <li>School of International Relations</li>
+            <li>Development Studies</li>
+            <li>Seminar rooms &amp; faculty offices</li>
+          </ul>
+          <div class="facility-timing">&#128336; Mon–Fri: 8am – 6pm</div>
+        </div>
+
+        <div class="facility-card" data-category="academic">
+          <div class="facility-header">
+            <span class="facility-icon">&#9879;</span>
+            <div>
+              <h3>Academic Block B</h3>
+              <span class="badge badge--academic">Academic</span>
+            </div>
+          </div>
+          <ul>
+            <li>School of Science &amp; Technology</li>
+            <li>Computer labs</li>
+            <li>Research labs</li>
+            <li>Lecture halls (capacity 200)</li>
+          </ul>
+          <div class="facility-timing">&#128336; Mon–Fri: 8am – 7pm</div>
+        </div>
+
+        <div class="facility-card" data-category="academic">
+          <div class="facility-header">
+            <span class="facility-icon">&#128218;</span>
+            <div>
+              <h3>Central Library</h3>
+              <span class="badge badge--academic">Academic</span>
+            </div>
+          </div>
+          <ul>
+            <li>50,000+ volumes</li>
+            <li>Digital databases (JSTOR, Scopus)</li>
+            <li>Reading rooms &amp; discussion areas</li>
+            <li>Printing &amp; scanning services</li>
+          </ul>
+          <div class="facility-timing">&#128336; Mon–Sat: 8am – 10pm</div>
+        </div>
+
+        <div class="facility-card" data-category="hostel">
+          <div class="facility-header">
+            <span class="facility-icon">&#127968;</span>
+            <div>
+              <h3>Boys' Hostel</h3>
+              <span class="badge badge--hostel">Hostel</span>
+            </div>
+          </div>
+          <ul>
+            <li>Blocks 1 &amp; 2 (~200 students)</li>
+            <li>Common room with TV</li>
+            <li>Laundry facility</li>
+            <li>High-speed Wi-Fi</li>
+          </ul>
+          <div class="facility-timing">&#128336; Curfew: 11pm daily</div>
+        </div>
+
+        <div class="facility-card" data-category="hostel">
+          <div class="facility-header">
+            <span class="facility-icon">&#127968;</span>
+            <div>
+              <h3>Girls' Hostel</h3>
+              <span class="badge badge--hostel">Hostel</span>
+            </div>
+          </div>
+          <ul>
+            <li>Blocks A &amp; B (~150 students)</li>
+            <li>24/7 security staff</li>
+            <li>Recreation room</li>
+            <li>Guest registration required</li>
+          </ul>
+          <div class="facility-timing">&#128336; Curfew: 10pm daily</div>
+        </div>
+
+        <div class="facility-card" data-category="dining">
+          <div class="facility-header">
+            <span class="facility-icon">&#127869;</span>
+            <div>
+              <h3>Main Mess</h3>
+              <span class="badge badge--dining">Dining</span>
+            </div>
+          </div>
+          <ul>
+            <li>Breakfast, lunch &amp; dinner</li>
+            <li>Vegetarian &amp; non-veg options</li>
+            <li>Special diet on request</li>
+            <li>Seat capacity: 300</li>
+          </ul>
+          <div class="facility-timing">&#128336; 7:30am | 1pm | 8pm</div>
+        </div>
+
+        <div class="facility-card" data-category="dining">
+          <div class="facility-header">
+            <span class="facility-icon">&#9749;</span>
+            <div>
+              <h3>Campus Canteen</h3>
+              <span class="badge badge--dining">Dining</span>
+            </div>
+          </div>
+          <ul>
+            <li>Snacks, beverages &amp; light meals</li>
+            <li>South Asian cuisine variety</li>
+            <li>Outdoor seating area</li>
+          </ul>
+          <div class="facility-timing">&#128336; 8am – 9pm daily</div>
+        </div>
+
+        <div class="facility-card" data-category="sports">
+          <div class="facility-header">
+            <span class="facility-icon">&#9917;</span>
+            <div>
+              <h3>Sports Complex</h3>
+              <span class="badge badge--sports">Sports</span>
+            </div>
+          </div>
+          <ul>
+            <li>Cricket ground</li>
+            <li>Football field</li>
+            <li>Basketball &amp; Volleyball courts</li>
+            <li>Indoor badminton</li>
+          </ul>
+          <div class="facility-timing">&#128336; 6am – 8pm daily</div>
+        </div>
+
+        <div class="facility-card" data-category="health">
+          <div class="facility-header">
+            <span class="facility-icon">&#127973;</span>
+            <div>
+              <h3>Health Centre</h3>
+              <span class="badge badge--health">Health</span>
+            </div>
+          </div>
+          <ul>
+            <li>Campus doctor (Mon–Fri)</li>
+            <li>Emergency first aid (24/7)</li>
+            <li>Basic medicines available</li>
+            <li>Referral to nearby hospitals</li>
+          </ul>
+          <div class="facility-timing">&#128336; Doctor: Mon–Fri 10am–5pm</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="compass-icon">&#9697;</span>
+        <strong>SAU Compass</strong>
+        <p>South Asian University Campus Guide</p>
+      </div>
+      <div class="footer-links">
+        <a href="map.html">Campus Map</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="timings.html">Timings</a>
+        <a href="notices.html">Notices</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>Made by Tisha Jangir, Sangam Kumar Yadav &amp; Varun Agrawal</p>
+        <p>&copy; 2026 SAU Compass.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

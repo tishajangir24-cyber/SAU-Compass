@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAU Compass – South Asian University Campus Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+</div>
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="compass-icon">&#9697;</span>
+          SAU Compass
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="map.html">Campus Map</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="timings.html">Timings</a></li>
+          <li><a href="notices.html">Notices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-tagline">Your guide to South Asian University</p>
+        <h1 class="hero-title">SAU Compass</h1>
+        <p class="hero-sub">
+          Navigate the campus, find facilities, check timings — all in one
+          place.
+        </p>
+        <div class="hero-actions">
+          <a href="map.html" class="btn btn-primary">Explore Map</a>
+          <a href="facilities.html" class="btn btn-outline">View Facilities</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">&#8595; scroll to explore</div>
+    </header>
+
+    <!-- ========== QUICK ACCESS CARDS ========== -->
+    <section class="section" id="quick-access">
+      <div class="container">
+        <h2 class="section-title">Quick Access</h2>
+        <p class="section-sub">Jump to the information you need right now</p>
+        <div class="cards-grid">
+          <a href="map.html" class="card card--map">
+            <div class="card-icon">&#128205;</div>
+            <h3>Campus Map</h3>
+            <p>
+              Interactive overview of all blocks, buildings, and outdoor spaces
+              across the 100-acre campus.
+            </p>
+            <span class="card-link">Explore &rarr;</span>
+          </a>
+
+          <a href="facilities.html" class="card card--facilities">
+            <div class="card-icon">&#127970;</div>
+            <h3>Facilities</h3>
+            <p>
+              Hostels, messes, academic blocks, administrative offices, sports
+              areas and common spaces.
+            </p>
+            <span class="card-link">Explore &rarr;</span>
+          </a>
+
+          <a href="timings.html" class="card card--timings">
+            <div class="card-icon">&#128336;</div>
+            <h3>Timings</h3>
+            <p>
+              Office hours, mess schedules, library timings, and temporary
+              closure updates.
+            </p>
+            <span class="card-link">Explore &rarr;</span>
+          </a>
+
+          <a href="notices.html" class="card card--notices">
+            <div class="card-icon">&#128276;</div>
+            <h3>Notices</h3>
+            <p>
+              Latest announcements, event updates, and important campus-wide
+              alerts.
+            </p>
+            <span class="card-link">Explore &rarr;</span>
+          </a>
+
+          <a href="contact.html" class="card card--contact">
+            <div class="card-icon">&#128222;</div>
+            <h3>Contact</h3>
+            <p>
+              Reach out to departments, security, hostel wardens and emergency
+              contacts quickly.
+            </p>
+            <span class="card-link">Explore &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section section--alt" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Why SAU Compass?</h2>
+          <p>
+            South Asian University spans over <strong>100 acres</strong> with
+            multiple academic blocks, administrative offices, hostels, messes,
+            and shared facilities. Finding the right place or checking if an
+            office is open often meant hunting across notice boards and informal
+            chats.
+          </p>
+          <p>
+            SAU Compass brings everything together — one clean, responsive
+            website that works on your phone, tablet, or laptop.
+          </p>
+          <ul class="about-list">
+            <li>&#10003; New student orientation made easy</li>
+            <li>&#10003; Real-time notice board in one place</li>
+            <li>&#10003; Office timings always up to date</li>
+            <li>&#10003; Works on any device, any browser</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Acres Campus</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Member Countries</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Facilities Listed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Always Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SEARCH BAR ========== -->
+    <section class="section" id="search-section">
+      <div class="container search-container">
+        <h2 class="section-title">Find Anything on Campus</h2>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search facilities, offices, timings..."
+            autocomplete="off"
+          />
+          <button onclick="doSearch()" class="btn btn-primary">Search</button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="compass-icon">&#9697;</span>
+          <strong>SAU Compass</strong>
+          <p>South Asian University Campus Guide</p>
+        </div>
+        <div class="footer-links">
+          <a href="map.html">Campus Map</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="timings.html">Timings</a>
+          <a href="notices.html">Notices</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-meta">
+          <p>Made by Tisha Jangir, Sangam Kumar Yadav &amp; Varun Agrawal</p>
+          <p>&copy; 2026 SAU Compass. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

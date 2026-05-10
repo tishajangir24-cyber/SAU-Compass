@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notices - SAU Compass</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="compass-icon">&#9697;</span> SAU Compass
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Campus Map</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="timings.html">Timings</a></li>
+        <li><a href="notices.html" class="active">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero page-hero--notices">
+    <div class="container">
+      <h1>Notices &amp; Announcements</h1>
+      <p>Stay updated with the latest campus news</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="urgent">Urgent</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="event">Events</button>
+        <button class="filter-btn" data-filter="hostel">Hostel</button>
+      </div>
+
+      <div class="notices-list" id="noticesList">
+
+        <div class="notice-card notice--urgent" data-category="urgent">
+          <div class="notice-meta">
+            <span class="notice-badge badge--urgent">&#9888; Urgent</span>
+            <span class="notice-date">December 15, 2024</span>
+          </div>
+          <h3>Water Supply Maintenance - Block B</h3>
+          <p>Water supply in Academic Block B will be suspended on <strong>December 16, 2024 from 9am to 2pm</strong> due to pipeline maintenance work. Students are advised to plan accordingly. Alternative water stations will be set up near the main entrance.</p>
+          <div class="notice-issued">Issued by: Administration Office</div>
+        </div>
+
+        <div class="notice-card notice--academic" data-category="academic">
+          <div class="notice-meta">
+            <span class="notice-badge badge--academic">Academic</span>
+            <span class="notice-date">May 11, 2026</span>
+          </div>
+          <h3>End-Semester Examination Schedule Released</h3>
+          <p>The end-semester examination timetable for May 2026 has been uploaded on the university portal. Students are required to confirm their room number details from their respective class groups. No changes will be accepted after this date.</p>
+          <div class="notice-issued">Issued by: Registrar's Office</div>
+        </div>
+
+        <div class="notice-card notice--event" data-category="event">
+          <div class="notice-meta">
+            <span class="notice-badge badge--event">&#127881; Event</span>
+            <span class="notice-date">December 10, 2024</span>
+          </div>
+          <h3>SAU Cultural Fest - "Harmony 2024"</h3>
+          <p>The annual cultural festival <em>Harmony 2024</em> will be held on <strong>December 20-22, 2024</strong> at the Main Auditorium and outdoor grounds. Events include music, dance, theatre, food stalls, and art exhibitions. All students are encouraged to participate and register through their respective departments.</p>
+          <div class="notice-issued">Issued by: Students' Union</div>
+        </div>
+
+        <div class="notice-card notice--academic" data-category="academic">
+          <div class="notice-meta">
+            <span class="notice-badge badge--academic">Academic</span>
+            <span class="notice-date">December 8, 2024</span>
+          </div>
+          <h3>Library Closed on December 17 (Gazetted Holiday)</h3>
+          <p>The Central Library will remain closed on December 17, 2024 due to a gazetted national holiday. Return deadlines falling on this date are automatically extended to December 18, 2024. No late fees will be charged for this extension.</p>
+          <div class="notice-issued">Issued by: Library Administration</div>
+        </div>
+
+        <div class="notice-card notice--hostel" data-category="hostel">
+          <div class="notice-meta">
+            <span class="notice-badge badge--hostel">Hostel</span>
+            <span class="notice-date">December 5, 2024</span>
+          </div>
+          <h3>Mess Menu Revised - Winter Schedule</h3>
+          <p>Starting December 16, the mess menu will shift to the winter schedule. Timings remain unchanged. A special dish has been added for Sunday dinners. Students with dietary restrictions should submit updated forms to the Hostel Office by December 14.</p>
+          <div class="notice-issued">Issued by: Hostel Warden's Office</div>
+        </div>
+
+        <div class="notice-card notice--event" data-category="event">
+          <div class="notice-meta">
+            <span class="notice-badge badge--event">&#127881; Event</span>
+            <span class="notice-date">December 3, 2024</span>
+          </div>
+          <h3>Guest Lecture: Enterpreneurship</h3>
+          <p>A guest lecture by Dr.-- on "Enterpreneurship" will be held on <strong>,April 2 2026 at 3pm</strong> in Seminar Hall, Academic Block 1. Open to all students and faculty. Prior registration is not required.</p>
+          <div class="notice-issued">Issued by: Department of Computer Science</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="compass-icon">&#9697;</span>
+        <strong>SAU Compass</strong>
+        <p>South Asian University Campus Guide</p>
+      </div>
+      <div class="footer-links">
+        <a href="map.html">Campus Map</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="timings.html">Timings</a>
+        <a href="notices.html">Notices</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <p>Made by Tisha Jangir, Sangam Kumar Yadav &amp; Varun Agrawal</p>
+        <p>&copy; 2026 SAU Compass.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
